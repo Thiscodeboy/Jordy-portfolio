@@ -22,10 +22,10 @@ export default function App() {
       {/* Main content */}
       <main>
         <Hero />
-        <TechStack />
+        <Skills />
         <Projects />
         <DataViz />
-        <Skills />
+        <TechStack />
         <Experience />
         <VibeCoder />
       </main>

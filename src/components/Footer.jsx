@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-links">
           <a
-            href="https://github.com/yordanos"
+            href="https://github.com/Thiscodeboy"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"

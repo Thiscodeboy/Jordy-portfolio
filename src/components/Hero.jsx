@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import profileImg from '../assets/profile.png';
 
 const particles = Array.from({ length: 30 }, (_, i) => ({
@@ -11,6 +11,32 @@ const particles = Array.from({ length: 30 }, (_, i) => ({
 }));
 
 export default function Hero() {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+
+  const mouseXSpring = useSpring(x, { stiffness: 300, damping: 20 });
+  const mouseYSpring = useSpring(y, { stiffness: 300, damping: 20 });
+
+  const rotateX = useTransform(mouseYSpring, [-0.5, 0.5], ["17.5deg", "-17.5deg"]);
+  const rotateY = useTransform(mouseXSpring, [-0.5, 0.5], ["-17.5deg", "17.5deg"]);
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const width = rect.width;
+    const height = rect.height;
+    const mouseX = e.clientX - rect.left;
+    const mouseY = e.clientY - rect.top;
+    const xPct = mouseX / width - 0.5;
+    const yPct = mouseY / height - 0.5;
+    x.set(xPct);
+    y.set(yPct);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
   return (
     <section className="hero" id="hero">
       {/* Floating particles */}
@@ -39,16 +65,27 @@ export default function Hero() {
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+          style={{ perspective: 1000 }}
         >
-          <div className="hero-avatar-wrapper">
-            <div className="hero-avatar-glow" />
-            <div className="hero-avatar-pulse" />
+          <motion.div 
+            className="hero-avatar-wrapper"
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            style={{
+              rotateX,
+              rotateY,
+              transformStyle: "preserve-3d",
+            }}
+          >
+            <div className="hero-avatar-glow" style={{ transform: "translateZ(-20px)" }} />
+            <div className="hero-avatar-pulse" style={{ transform: "translateZ(-10px)" }} />
             <img
               src={profileImg}
               alt="Yordanos Haliso Hanjalo"
               className="hero-avatar"
+              style={{ transform: "translateZ(30px)" }}
             />
-          </div>
+          </motion.div>
         </motion.div>
 
         {/* Text — Right side */}

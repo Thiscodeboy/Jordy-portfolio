@@ -115,7 +115,7 @@ export default function Hero() {
           >
             Hi, I'm <span className="gradient-text">Yordanos</span>.
             I bridge the gap between <span className="gradient-text">Business & Code</span>{' '}
-            by leveraging data analysis to build and optimize scalable digital ecosystems.
+            by leveraging <span className="gradient-text">data analysis</span> to build and optimize scalable digital ecosystems.
           </motion.h1>
 
           {/* Subtitle */}

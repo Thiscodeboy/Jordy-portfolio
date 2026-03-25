@@ -33,7 +33,7 @@ export default function VibeCoder() {
             projects faster and smarter. By leveraging <strong style={{ color: '#8b5cf6' }}>Claude</strong>,{' '}
             <strong style={{ color: '#00d4ff' }}>ChatGPT</strong>, and{' '}
             <strong style={{ color: '#ff2d75' }}>Cursor IDE</strong>, I accelerate every phase
-            of development — from rapid prototyping and debugging to full-stack deployment.
+            of development from rapid prototyping and debugging to full-stack deployment.
             This isn't replacing skill; it's <em>amplifying</em> it.
           </p>
 

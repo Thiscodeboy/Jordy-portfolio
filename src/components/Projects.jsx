@@ -17,7 +17,7 @@ const projects = [
   {
     tag: 'Full-Stack Development',
     title: 'Full-Stack Vibe Coder Projects',
-    desc: 'Built complete web applications across front-end and back-end using React.js, Node.js, and REST APIs — combining core coding with AI-assisted workflows.',
+    desc: 'Built complete web applications across front-end and back-end using React.js, Node.js, and REST APIs combining core coding with AI-assisted workflows.',
     gradient: 'linear-gradient(135deg, #0a0a0a, #1a1a2e, #16213e)',
     kpis: [
       { value: 'React', label: 'Frontend' },

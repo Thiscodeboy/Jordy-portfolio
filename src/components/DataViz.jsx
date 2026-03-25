@@ -103,7 +103,7 @@ export default function DataViz() {
         >
           <h2 className="section-title">Impact by the Numbers</h2>
           <p className="section-subtitle">
-            Real metrics from real campaigns — data-driven proof of impact.
+            Real metrics from real campaigns data driven proof of impact.
           </p>
         </motion.div>
 

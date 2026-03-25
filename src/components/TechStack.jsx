@@ -40,7 +40,7 @@ export default function TechStack() {
         >
           <h2 className="section-title">The Vibe Coder Tech Stack</h2>
           <p className="section-subtitle">
-            Technologies I use to build full-stack web experiences — accelerated with AI.
+            Technologies I use to build full-stack web experiences accelerated with AI.
           </p>
         </motion.div>
 
@@ -68,7 +68,7 @@ export default function TechStack() {
           transition={{ delay: 0.6, duration: 0.5 }}
         >
           <HiSparkles className="ai-badge-icon" />
-          AI-Assisted Accelerated Development
+          AI Assisted Accelerated Development
         </motion.div>
       </div>
     </section>

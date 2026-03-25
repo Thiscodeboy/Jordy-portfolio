@@ -114,8 +114,8 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             Hi, I'm <span className="gradient-text">Yordanos</span>.
-            I build digital ecosystems at the intersection of{' '}
-            <span className="gradient-text">Business & Code</span>.
+            I bridge the gap between <span className="gradient-text">Business & Code</span>{' '}
+            by leveraging data analysis to build and optimize scalable digital ecosystems.
           </motion.h1>
 
           {/* Subtitle */}

@@ -103,7 +103,7 @@ export default function Hero() {
             transition={{ delay: 0.3, duration: 0.6 }}
           >
             <span className="hero-badge-dot" />
-            Available for Opportunities
+            Online Now
           </motion.div>
 
           {/* Headline */}

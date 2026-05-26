@@ -72,7 +72,7 @@ body {
   background: var(--bg-primary);
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--neon-blue), var(--neon-magenta));
+  background: var(--neon-blue);
   border-radius: 3px;
 }
 
@@ -95,10 +95,14 @@ body {
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
   margin-bottom: 0.5em;
-  background: var(--gradient-blue-magenta);
+  background: var(--neon-blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.hero-title .accent-text {
+  color: var(--neon-blue);
 }
 
 .section-subtitle {
@@ -197,7 +201,7 @@ body {
   font-family: var(--font-heading);
   font-weight: 800;
   font-size: 1.4rem;
-  background: var(--gradient-blue-magenta);
+  background: var(--neon-blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -227,7 +231,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--gradient-blue-magenta);
+  background: var(--neon-blue);
   transition: width var(--transition-medium);
   border-radius: 1px;
 }
@@ -307,7 +311,7 @@ body {
   position: absolute;
   inset: -6px;
   border-radius: 50%;
-  background: var(--gradient-blue-magenta);
+  background: var(--neon-blue);
   z-index: 1;
   animation: rotateGlow 4s linear infinite;
   filter: blur(4px);
@@ -368,10 +372,7 @@ body {
 }
 
 .hero-title .gradient-text {
-  background: var(--gradient-blue-magenta);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--neon-blue);
 }
 
 .hero-subtitle {
@@ -404,7 +405,7 @@ body {
 }
 
 .btn-primary {
-  background: var(--gradient-blue-magenta);
+  background: var(--neon-blue);
   color: #fff;
   box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
 }
@@ -503,7 +504,7 @@ body {
   margin-top: 2rem;
   padding: 12px 24px;
   border-radius: 50px;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(0, 212, 255, 0.1));
+  background: rgba(0, 212, 255, 0.08);
   border: 1px solid rgba(139, 92, 246, 0.25);
   font-size: 0.9rem;
   color: var(--neon-purple);
@@ -547,22 +548,12 @@ body {
 .project-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.4) 40%,
-    rgba(0, 0, 0, 0.9) 100%
-  );
+  background: rgba(0, 0, 0, 0.5);
   transition: all var(--transition-medium);
 }
 
 .project-card:hover .project-card-overlay {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0.5) 30%,
-    rgba(0, 0, 0, 0.95) 100%
-  );
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .project-card-content {
@@ -625,7 +616,7 @@ body {
 .kpi-value {
   font-size: 1.3rem;
   font-weight: 800;
-  background: var(--gradient-blue-magenta);
+  background: var(--neon-blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -711,7 +702,7 @@ body {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(180deg, var(--neon-blue), var(--neon-magenta), transparent);
+  background: var(--neon-blue);
 }
 
 .timeline-item {
@@ -917,7 +908,7 @@ body {
   transform: translate(-50%, -50%);
   font-size: 1.6rem;
   font-weight: 800;
-  background: var(--gradient-blue-magenta);
+  background: var(--neon-blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

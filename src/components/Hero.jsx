@@ -95,16 +95,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
         >
-          {/* Badge */}
-          <motion.div
-            className="hero-badge"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
-          >
-            <span className="hero-badge-dot" />
-            Online Now
-          </motion.div>
+
 
           {/* Headline */}
           <motion.h1
@@ -113,9 +104,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            Hi, I'm <span className="gradient-text">Yordanos</span>.
-            I bridge the gap between <span className="gradient-text">Business & Code</span>{' '}
-            by leveraging <span className="gradient-text">data analysis</span> to build and optimize scalable digital ecosystems.
+            Hi, I'm <span className="accent-text">Yordanos</span>.
+            I bridge the gap between <span className="accent-text">Business & Code</span>{' '}
+            by leveraging <span className="accent-text">data analysis</span> to build and optimize scalable digital ecosystems.
           </motion.h1>
 
           {/* Subtitle */}
@@ -125,7 +116,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Multidisciplinary Full-Stack Vibe Coder & Digital Strategist
+            Digital Strategist & Creative Technologist
           </motion.p>
 
           {/* CTA Buttons */}

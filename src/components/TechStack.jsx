@@ -38,9 +38,9 @@ export default function TechStack() {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
         >
-          <h2 className="section-title">The Vibe Coder Tech Stack</h2>
+          <h2 className="section-title">Tech Stack</h2>
           <p className="section-subtitle">
-            Technologies I use to build full-stack web experiences accelerated with AI.
+            Technologies I use to build web experiences and digital solutions.
           </p>
         </motion.div>
 

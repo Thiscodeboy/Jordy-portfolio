@@ -6,14 +6,13 @@ import Projects from './components/Projects';
 import DataViz from './components/DataViz';
 import Skills from './components/Skills';
 
-import VibeCoder from './components/VibeCoder';
+
 import Footer from './components/Footer';
 
 export default function App() {
   return (
     <>
       {/* Ambient background effects */}
-      <div className="bg-gradient-animated" />
       <div className="noise-overlay" />
 
       {/* Navigation */}
@@ -27,7 +26,6 @@ export default function App() {
         <DataViz />
         <TechStack />
 
-        <VibeCoder />
       </main>
 
       {/* Footer */}

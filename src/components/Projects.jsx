@@ -6,7 +6,7 @@ const projects = [
     tag: 'Marketing Operations',
     title: 'Archery Student Organization',
     desc: 'Led end-to-end marketing operations, growing membership and building a thriving social media presence through targeted digital campaigns.',
-    gradient: 'linear-gradient(135deg, #0f0c29, #302b63, #24243e)',
+    bg: '#0f0c29',
     kpis: [
       { value: '65%', label: 'Email Open Rate' },
       { value: '12%', label: 'Click-Through Rate' },
@@ -15,10 +15,10 @@ const projects = [
     ],
   },
   {
-    tag: 'Full-Stack Development',
-    title: 'Full-Stack Vibe Coder Projects',
-    desc: 'Built complete web applications across front-end and back-end using React.js, Node.js, and REST APIs combining core coding with AI-assisted workflows.',
-    gradient: 'linear-gradient(135deg, #0a0a0a, #1a1a2e, #16213e)',
+    tag: 'Web Development',
+    title: 'Web Application Projects',
+    desc: 'Built complete web applications across front-end and back-end using React.js, Node.js, and REST APIs with modern development workflows.',
+    bg: '#0a0a1a',
     kpis: [
       { value: 'React', label: 'Frontend' },
       { value: 'Node.js', label: 'Backend' },
@@ -30,7 +30,7 @@ const projects = [
     tag: 'Digital Marketing',
     title: 'Multi-Channel Campaign Strategy',
     desc: 'Executed integrated digital marketing campaigns across email, social media, and content channels. Tracked KPIs via analytics dashboards to optimize performance.',
-    gradient: 'linear-gradient(135deg, #1a0a2e, #2d1b69, #11001c)',
+    bg: '#1a0a2e',
     kpis: [
       { value: 'SEO', label: 'Optimization' },
       { value: 'HubSpot', label: 'CRM' },
@@ -69,7 +69,7 @@ export default function Projects() {
             >
               <div
                 className="project-card-bg"
-                style={{ background: project.gradient }}
+                style={{ background: project.bg }}
               />
               <div className="project-card-overlay" />
               <div className="project-card-content">

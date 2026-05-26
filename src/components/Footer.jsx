@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
         <p className="footer-copy">
           © {new Date().getFullYear()} Yordanos Haliso Hanjalo. Crafted with{' '}
-          <span className="heart">♥</span> and a Vibe Coder workflow.
+          <span className="heart">♥</span> and dedication.
         </p>
       </div>
     </footer>

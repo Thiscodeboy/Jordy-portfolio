@@ -12,8 +12,7 @@ import Footer from './components/Footer';
 export default function App() {
   return (
     <>
-      {/* Ambient background effects */}
-      <div className="noise-overlay" />
+
 
       {/* Navigation */}
       <Navbar />

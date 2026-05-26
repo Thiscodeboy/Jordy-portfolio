@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-inner">
-        <a href="#hero" className="nav-logo">YH.</a>
+
         <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
           {navItems.map((item) => (
             <li key={item.href}>

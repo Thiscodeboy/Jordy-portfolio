@@ -1,14 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion';
 import profileImg from '../assets/profile.png';
 
-const particles = Array.from({ length: 30 }, (_, i) => ({
-  id: i,
-  left: `${Math.random() * 100}%`,
-  delay: Math.random() * 8,
-  duration: 6 + Math.random() * 8,
-  size: 2 + Math.random() * 4,
-  color: Math.random() > 0.5 ? '#00d4ff' : '#ff2d75',
-}));
 
 export default function Hero() {
   const x = useMotionValue(0);
@@ -39,24 +31,6 @@ export default function Hero() {
 
   return (
     <section className="hero" id="hero">
-      {/* Floating particles */}
-      <div className="hero-particles">
-        {particles.map((p) => (
-          <div
-            key={p.id}
-            className="particle"
-            style={{
-              left: p.left,
-              width: p.size,
-              height: p.size,
-              background: p.color,
-              animationDelay: `${p.delay}s`,
-              animationDuration: `${p.duration}s`,
-              boxShadow: `0 0 ${p.size * 3}px ${p.color}`,
-            }}
-          />
-        ))}
-      </div>
 
       <div className="container hero-layout">
         {/* Avatar — Left side */}
